@@ -10,17 +10,35 @@
             name="keywords"
             content="password generator, front-end development, web dev projects"
         />
+        <link rel="shortcut icon" href="assets/password-lock.png" type="image/x-icon">
+        <link rel="manifest" href="manifest.json">
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js" defer></script>
     </head>
     <body>
         <main>
             <h1>Password Generator</h1>
-            <button onclick="generatePassword()">Generate Password</button>
+            <button class="full-width" onclick="generatePassword()">Generate Password</button>
             <div class="password" id="password"></div>
-            <button onclick="savePassword()">Save Password</button>
-            <button onclick="showSavedPasswords()">Saved Passwords</button>
-            <button onclick="clearSavedPasswords()">Clear Saved Passwords</button>
+            <div id="copy-clr">
+                <button onclick="copyToClipboard()">Copy</button>
+                <button onclick="savePassword()">Save Password</button>
+                <button onclick="clearPasswordDisplay()">Clear</button>
+            </div>
+            <button class="full-width" onclick="showSavedPasswords()">Saved Passwords</button>
+            <button class="full-width" onclick="clearSavedPasswords()">Clear Saved Passwords</button>
         </main>
+
+        <script>
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then(registration => {
+                console.log('Service Worker registered with scope:', registration.scope)
+              })
+              .catch(error => {
+                console.error('Service Worker registration failed:', error)
+              })
+          }
+        </script>
     </body>
 </html>
