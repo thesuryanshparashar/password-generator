@@ -13,7 +13,7 @@ function generatePassword() {
 }
 
 function copyToClipboard() {
-  navigator.clipboard.writeText(passwordDisplay.textContent).then(() => alert("Text copied to clipboard")).catch(err => console.error(err))
+  navigator.clipboard.writeText(passwordDisplay.textContent).then(() => alert("Password copied to clipboard")).catch(err => console.error(err))
 }
 
 function clearPasswordDisplay() {
