@@ -1,6 +1,7 @@
 * {
-    font-family: 'Prosto One', cursive;
+  font-family: "Prosto One", cursive;
 }
+
 html {
     background: linear-gradient(225deg, #004e92, #000428 75%); 
 }
@@ -26,7 +27,9 @@ main {
 }
 
 @keyframes scale {
-    to {transform: scale(1);}
+    to {
+        transform: scale(1);
+    }
 }
 
 h1 {
@@ -37,7 +40,7 @@ h1 {
 }
 
 button {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 10px;
     background: linear-gradient(to right, #000428, #004e92);
     /* background: #000428; */
@@ -45,7 +48,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 5px 4px;
+    margin: 5px 0;
     transition: all 500ms;
 }
 
