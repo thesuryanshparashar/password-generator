@@ -1,9 +1,11 @@
+* {
+    font-family: 'Prosto One', cursive;
+}
 html {
     background: linear-gradient(225deg, #004e92, #000428 75%); 
 }
 
 body {
-    font-family: 'Prosto One', cursive;
     margin: 0;
     padding: 0;
     display: flex;
