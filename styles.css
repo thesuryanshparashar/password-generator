@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Aclonica', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -30,6 +30,7 @@ main {
 h1 {
     margin-bottom: 20px;
     color: #fff;
+    font-family: 'Aclonica', sans-serif;
 }
 
 button {
